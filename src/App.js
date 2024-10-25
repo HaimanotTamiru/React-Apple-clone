@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import Header from './Header';
+import './commonResource/css/bootstrap.css';
+import './commonResource/css/styles.css';
+import Footer from './Footer'
+import Alert from './Alert';
+import IpadProSection from './IpadProSection';
+import MacBookSection from './MacBookSection';
+import IphoneProSection from './IphoneProSection';
+import IphoneLeftRight from './IphoneLeftRight';
+import TvLeftRight from './TvLeftRight';
+import AppleCardLeftRight from './AppleCardLeftRight';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Alert />
+      <IpadProSection />
+      <MacBookSection />
+      <IphoneProSection />
+      <IphoneLeftRight />
+      <TvLeftRight />
+      <AppleCardLeftRight/>
+      <Footer/>
     </div>
   );
 }
